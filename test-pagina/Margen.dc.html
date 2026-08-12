@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Margen — Growth partner para marcas gastronómicas en apps de delivery</title>
+<meta name="description" content="Recupero cargos mal cobrados en Uber Eats, Rappi, PedidosYa y DoorDash, consolido tus números y sostengo el seguimiento semana a semana." />
+<link rel="alternate" hrefLang="en" href="Margen-EN.dc.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: #FAF8F4; color: #0A0A0A; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.55; text-wrap: pretty; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: 'IBM Plex Sans Condensed', 'IBM Plex Sans', sans-serif; margin: 0; letter-spacing: -0.015em; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: #B04520; text-decoration: none; }
+  a:hover { color: #0A0A0A; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+  input, select, textarea, button { font: inherit; color: inherit; }
+  input[type="range"] { accent-color: #D4552A; }
+  input[type="checkbox"] { accent-color: #D4552A; }
+  summary::-webkit-details-marker { display: none; }
+  ::selection { background: #D4552A; color: #FAF8F4; }
+  @keyframes mgRise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes mgBlink { 0%, 45% { opacity: 1; } 50%, 95% { opacity: 0.15; } }
+  @keyframes mgTicker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; } }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" lang="es" style="background:#FAF8F4; overflow-x:hidden">
+
+<header style="border-bottom:1px solid #0A0A0A; background:#FAF8F4">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 20px; padding:14px 0">
+    <a href="#inicio" style="display:flex; align-items:baseline; gap:8px; color:#0A0A0A">
+      <span style="font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:700; font-size:23px; letter-spacing:-0.02em">Margen</span>
+      <span style="width:7px; height:7px; background:#D4552A; display:block; transform:translateY(-1px)"></span>
+    </a>
+    <nav aria-label="Secciones" style="display:flex; gap:22px; overflow-x:auto; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; scrollbar-width:none">
+      <a href="#disputas" style="color:#6E6A62; white-space:nowrap" style-hover="color:#0A0A0A">Disputas</a>
+      <a href="#como" style="color:#6E6A62; white-space:nowrap" style-hover="color:#0A0A0A">Cómo funciona</a>
+      <a href="#calculadora" style="color:#6E6A62; white-space:nowrap" style-hover="color:#0A0A0A">Calculadora</a>
+      <a href="#planes" style="color:#6E6A62; white-space:nowrap" style-hover="color:#0A0A0A">Planes</a>
+      <a href="#faq" style="color:#6E6A62; white-space:nowrap" style-hover="color:#0A0A0A">FAQ</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px">
+      <p style="display:flex; align-items:center; gap:6px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase"><span style="color:#0A0A0A">ES</span><span style="color:#B0AA9E">/</span><a href="Margen-EN.dc.html" hrefLang="en" style="color:#6E6A62" style-hover="color:#0A0A0A">EN</a></p>
+      <a href="#contacto" style="display:inline-flex; align-items:center; min-height:40px; background:#0A0A0A; color:#FAF8F4; padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; white-space:nowrap" style-hover="background:#D4552A; color:#FAF8F4">Auditoría gratuita</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="inicio" style="border-bottom:1px solid #0A0A0A; background-image:repeating-linear-gradient(to right, rgba(10,10,10,0.055) 0 1px, transparent 1px 64px); background-position:center">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(40px,7vw,84px) 0 0">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#1B5E63; margin-bottom:clamp(20px,3vw,30px); animation:mgRise .5s ease both">Growth partner · marcas gastronómicas en apps de delivery</p>
+    <h1 style="font-size:clamp(38px,7.6vw,84px); font-weight:600; line-height:0.98; letter-spacing:-0.03em; max-width:16ch; animation:mgRise .5s ease .05s both">Las apps te cobran mal todos los meses. Yo lo <span style="color:#D4552A">detecto, lo reclamo y lo recupero</span>.</h1>
+    <p style="max-width:56ch; margin-top:clamp(20px,3vw,28px); font-size:clamp(16px,1.9vw,19px); color:#3A382F; animation:mgRise .5s ease .1s both">Margen entra a tus cuentas de Uber&nbsp;Eats, Rappi, PedidosYa y DoorDash y ejecuta: recupera la plata mal cobrada, consolida los números que hoy nadie mira y sostiene el seguimiento semana a semana. Todo con automatizaciones propias, no con gente haciendo copy&#8209;paste.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:clamp(26px,4vw,36px); animation:mgRise .5s ease .15s both">
+      <a href="#contacto" style="background:#D4552A; color:#FAF8F4; padding:16px 26px; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:18px; letter-spacing:0.01em; border:1px solid #D4552A; min-height:48px; display:inline-flex; align-items:center" style-hover="background:#0A0A0A; border-color:#0A0A0A; color:#FAF8F4">Auditoría gratuita de tu cuenta</a>
+      <a href="#casos" style="background:transparent; color:#0A0A0A; padding:16px 26px; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:18px; border:1px solid #0A0A0A; min-height:48px; display:inline-flex; align-items:center" style-hover="background:#0A0A0A; color:#FAF8F4">Ver casos</a>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:1px; background:#0A0A0A; border:1px solid #0A0A0A; margin-top:clamp(36px,5vw,56px); animation:mgRise .5s ease .2s both">
+      <div style="background:#FAF8F4; padding:20px 20px 18px">
+        <span data-counter="" data-suffix=" %" style="display:block; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(40px,6.4vw,62px); line-height:1; letter-spacing:-0.045em; font-variant-numeric:tabular-nums; color:#D4552A">3 %</span>
+        <p style="margin-top:10px; font-size:15px; color:#3A382F; max-width:26ch">de la facturación en apps que vuelve por disputas mal cerradas</p>
+      </div>
+      <div style="background:#FAF8F4; padding:20px 20px 18px">
+        <span data-counter="" data-suffix=" h" style="display:block; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(40px,6.4vw,62px); line-height:1; letter-spacing:-0.045em; font-variant-numeric:tabular-nums">20 h</span>
+        <p style="margin-top:10px; font-size:15px; color:#3A382F; max-width:26ch">de armado manual de reportes que desaparecen por mes</p>
+      </div>
+      <div style="background:#FAF8F4; padding:20px 20px 18px">
+        <span data-counter="" data-prefix="USD " style="display:block; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(40px,6.4vw,62px); line-height:1; letter-spacing:-0.045em; font-variant-numeric:tabular-nums">USD 100.000</span>
+        <p style="margin-top:10px; font-size:15px; color:#3A382F; max-width:26ch">recuperados en total para las cuentas que opero</p>
+      </div>
+    </div>
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:#6E6A62; margin-top:10px; padding-bottom:clamp(34px,5vw,52px)">Valores de ejemplo · se reemplazan con tus datos reales antes de publicar</p>
+  </div>
+</section>
+
+<section aria-label="Plataformas" style="border-bottom:1px solid #0A0A0A; background:#0A0A0A; color:#FAF8F4; overflow:hidden">
+  <div style="display:flex; width:max-content; animation:mgTicker 34s linear infinite">
+    <div style="display:flex; gap:44px; padding:12px 22px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; white-space:nowrap">
+      <span>Uber Eats</span><span style="color:#D4552A">/</span><span>Rappi</span><span style="color:#D4552A">/</span><span>PedidosYa</span><span style="color:#D4552A">/</span><span>DoorDash</span><span style="color:#D4552A">/</span><span style="color:#9B958A">Multi-marca</span><span style="color:#D4552A">/</span><span style="color:#9B958A">Multi-sucursal</span><span style="color:#D4552A">/</span>
+    </div>
+    <div aria-hidden="true" style="display:flex; gap:44px; padding:12px 22px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; white-space:nowrap">
+      <span>Uber Eats</span><span style="color:#D4552A">/</span><span>Rappi</span><span style="color:#D4552A">/</span><span>PedidosYa</span><span style="color:#D4552A">/</span><span>DoorDash</span><span style="color:#D4552A">/</span><span style="color:#9B958A">Multi-marca</span><span style="color:#D4552A">/</span><span style="color:#9B958A">Multi-sucursal</span><span style="color:#D4552A">/</span>
+    </div>
+  </div>
+</section>
+
+<section id="problema" style="border-bottom:1px solid #0A0A0A">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(28px,5vw,64px)">
+    <div>
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">01 / El problema</p>
+      <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:14ch">La plata que se va sin que nadie la vea</h2>
+      <p style="margin-top:18px; max-width:46ch; color:#3A382F; font-size:clamp(16px,1.8vw,18px)">No se pierde de golpe. Se pierde de a poco, en órdenes de veinte dólares, todos los días, en cuatro paneles distintos que nadie abre al mismo tiempo. Cuando alguien se sienta a mirar, la ventana de reclamo ya venció.</p>
+    </div>
+    <ul style="display:grid; gap:1px; background:#D9D4C9; border:1px solid #0A0A0A; align-content:start">
+      <li style="background:#FAF8F4; padding:18px 20px; display:flex; gap:16px; align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">01</span><span>Pedidos cancelados por la plataforma que igual cocinaste y nadie disputó.</span></li>
+      <li style="background:#FAF8F4; padding:18px 20px; display:flex; gap:16px; align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">02</span><span>Faltantes y devoluciones cargados al local sin evidencia que los respalde.</span></li>
+      <li style="background:#FAF8F4; padding:18px 20px; display:flex; gap:16px; align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">03</span><span>Ajustes y comisiones de la plataforma que aparecen en la liquidación sin explicación.</span></li>
+      <li style="background:#FAF8F4; padding:18px 20px; display:flex; gap:16px; align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">04</span><span>Ventanas de reclamo que vencen en días y se pierden por no tener a quién asignarlas.</span></li>
+      <li style="background:#FAF8F4; padding:18px 20px; display:flex; gap:16px; align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">05</span><span>Un informe armado a mano el lunes, con datos de una sola app y ya desactualizado.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="disputas" style="border-bottom:1px solid #0A0A0A; background:#0A0A0A; color:#FAF8F4">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,96px) 0">
+    <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:baseline; justify-content:space-between">
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#D4552A">02 / Pilar 01 — el principal</p>
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#7E7970">Se paga solo</p>
+    </div>
+    <h2 style="font-size:clamp(38px,8vw,92px); font-weight:600; line-height:0.96; letter-spacing:-0.035em; margin-top:16px; max-width:13ch">Recupero de disputas</h2>
+    <p style="margin-top:20px; max-width:52ch; font-size:clamp(17px,2vw,21px); color:#D8D4CA">Un sistema revisa cada pedido, encuentra los que se cobraron mal, arma el reclamo con la evidencia adjunta y lo presenta antes de que venza la ventana. Sin que vos tengas que abrir un panel.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1px; background:#2A2A26; border:1px solid #2A2A26; margin-top:clamp(32px,4.5vw,52px)">
+      <div style="background:#0A0A0A; padding:24px 22px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#D4552A">Detecta</p>
+        <p style="margin-top:12px; color:#D8D4CA">Cruza cada orden contra la liquidación de la plataforma y marca lo que no cierra: cobrado de menos, cancelado, con faltante o ajustado.</p>
+      </div>
+      <div style="background:#0A0A0A; padding:24px 22px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#D4552A">Reclama</p>
+        <p style="margin-top:12px; color:#D8D4CA">Arma el caso con ticket, comprobante y foto cuando corresponde, y lo presenta en el canal de cada app dentro del plazo.</p>
+      </div>
+      <div style="background:#0A0A0A; padding:24px 22px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#D4552A">Rinde cuentas</p>
+        <p style="margin-top:12px; color:#D8D4CA">Reporte por marca y por sucursal: qué se reclamó, qué se recuperó y qué quedó pendiente, con el monto de cada línea.</p>
+      </div>
+    </div>
+    <div style="border:1px solid #2A2A26; margin-top:1px; background:#111110">
+      <div style="display:flex; align-items:center; gap:10px; padding:12px 18px; border-bottom:1px solid #2A2A26; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#7E7970">
+        <span style="width:7px; height:7px; background:#D4552A; display:block; animation:mgBlink 1.8s steps(1,end) infinite"></span>
+        <span>margen · cola de reclamos</span>
+        <span style="margin-left:auto; color:#8A857A">vista ilustrativa</span>
+      </div>
+      <ul style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#D8D4CA; overflow-x:auto">
+        <li style="display:grid; grid-template-columns:96px 1fr 96px 108px; gap:14px; padding:11px 18px; border-bottom:1px solid #1E1E1B; min-width:520px; color:#9B958A; letter-spacing:0.08em; text-transform:uppercase; font-size:10.5px"><span>Plataforma</span><span>Motivo</span><span style="text-align:right">Monto</span><span style="text-align:right">Estado</span></li>
+        <li style="display:grid; grid-template-columns:96px 1fr 96px 108px; gap:14px; padding:11px 18px; border-bottom:1px solid #1E1E1B; min-width:520px"><span>Uber Eats</span><span>Cancelado post-preparación</span><span style="text-align:right; font-variant-numeric:tabular-nums">USD 24</span><span style="text-align:right; color:#7FE3A0">Recuperado</span></li>
+        <li style="display:grid; grid-template-columns:96px 1fr 96px 108px; gap:14px; padding:11px 18px; border-bottom:1px solid #1E1E1B; min-width:520px"><span>Rappi</span><span>Faltante sin evidencia</span><span style="text-align:right; font-variant-numeric:tabular-nums">USD 18</span><span style="text-align:right; color:#7FE3A0">Recuperado</span></li>
+        <li style="display:grid; grid-template-columns:96px 1fr 96px 108px; gap:14px; padding:11px 18px; border-bottom:1px solid #1E1E1B; min-width:520px"><span>PedidosYa</span><span>Ajuste de comisión</span><span style="text-align:right; font-variant-numeric:tabular-nums">USD 41</span><span style="text-align:right; color:#E5B454">En revisión</span></li>
+        <li style="display:grid; grid-template-columns:96px 1fr 96px 108px; gap:14px; padding:11px 18px; min-width:520px"><span>DoorDash</span><span>Orden cobrada de menos</span><span style="text-align:right; font-variant-numeric:tabular-nums">USD 12</span><span style="text-align:right; color:#E5B454">Presentado</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:1px solid #0A0A0A">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:1px; background:#D9D4C9; border:1px solid #0A0A0A">
+    <article id="reportes" style="background:#FAF8F4; padding:clamp(26px,3.4vw,38px)">
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#1B5E63">Pilar 02</p>
+      <h2 style="font-size:clamp(27px,3.6vw,40px); font-weight:600; line-height:1.05; margin-top:12px">Reportes automáticos</h2>
+      <p style="margin-top:14px; color:#3A382F">El informe que hoy le come media jornada a alguien se genera y se envía solo. Llega los lunes a la mañana sin que nadie lo pida.</p>
+      <ul style="margin-top:20px; display:grid; gap:9px; font-size:15.5px; color:#3A382F">
+        <li style="display:flex; gap:11px"><span style="color:#1B5E63; font-family:'IBM Plex Mono',monospace">+</span><span>Ventas, costos y comisiones consolidados de todas las plataformas y marcas en un solo lugar.</span></li>
+        <li style="display:flex; gap:11px"><span style="color:#1B5E63; font-family:'IBM Plex Mono',monospace">+</span><span>Ratings, tiempos de preparación y cancelaciones por sucursal.</span></li>
+        <li style="display:flex; gap:11px"><span style="color:#1B5E63; font-family:'IBM Plex Mono',monospace">+</span><span>Cobertura de fotos por categoría del menú.</span></li>
+        <li style="display:flex; gap:11px"><span style="color:#1B5E63; font-family:'IBM Plex Mono',monospace">+</span><span>En el formato que ya usás: PDF, dashboard o planilla.</span></li>
+      </ul>
+    </article>
+    <article id="seguimiento" style="background:#FAF8F4; padding:clamp(26px,3.4vw,38px)">
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#1B5E63">Pilar 03</p>
+      <h2 style="font-size:clamp(27px,3.6vw,40px); font-weight:600; line-height:1.05; margin-top:12px">Seguimiento continuo</h2>
+      <p style="margin-top:14px; color:#3A382F">Alertas cuando algo se rompe, en el momento en que se rompe. Y una revisión mensual con acciones concretas, no un reporte de vanidad.</p>
+      <ul style="margin-top:20px; display:grid; gap:9px; font-size:15.5px; color:#3A382F">
+        <li style="display:flex; gap:11px"><span style="color:#B04520; font-family:'IBM Plex Mono',monospace">!</span><span>Un ítem se cayó del menú o quedó sin stock en una sola app.</span></li>
+        <li style="display:flex; gap:11px"><span style="color:#B04520; font-family:'IBM Plex Mono',monospace">!</span><span>El rating de una sucursal bajó del umbral que definimos.</span></li>
+        <li style="display:flex; gap:11px"><span style="color:#B04520; font-family:'IBM Plex Mono',monospace">!</span><span>Se dispararon las cancelaciones en una franja horaria.</span></li>
+        <li style="display:flex; gap:11px"><span style="color:#B04520; font-family:'IBM Plex Mono',monospace">!</span><span>Una sucursal quedó cerrada en la app sin que nadie avisara.</span></li>
+      </ul>
+    </article>
+  </div>
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding-bottom:clamp(48px,7vw,92px); margin-top:-1px">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6E6A62; padding:22px 0 14px">También incluido</p>
+    <ul style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1px; background:#D9D4C9; border:1px solid #D9D4C9">
+      <li style="background:#FAF8F4; padding:18px 20px; font-size:15.5px; color:#3A382F">Optimización de fichas y fotos según lo que pide cada plataforma.</li>
+      <li style="background:#FAF8F4; padding:18px 20px; font-size:15.5px; color:#3A382F">Análisis de rentabilidad real de cada promo, ya descontadas comisiones.</li>
+      <li style="background:#FAF8F4; padding:18px 20px; font-size:15.5px; color:#3A382F">Onboarding de sucursales y marcas nuevas a la operación.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="como" style="border-bottom:1px solid #0A0A0A">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">03 / Cómo funciona</p>
+    <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:18ch">Cuatro pasos con plazos reales</h2>
+    <ol style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1px; background:#0A0A0A; border:1px solid #0A0A0A; margin-top:clamp(28px,4vw,44px)">
+      <li style="background:#FAF8F4; padding:24px 22px 26px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; border-bottom:1px solid #D9D4C9; padding-bottom:12px">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:clamp(30px,4vw,44px); font-weight:500; line-height:1; letter-spacing:-0.04em">01</span>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#B04520; text-align:right">5 días hábiles</span>
+        </div>
+        <h3 style="font-size:22px; font-weight:600; margin-top:14px">Auditoría</h3>
+        <p style="margin-top:8px; font-size:15.5px; color:#3A382F">Conecto tus cuentas en modo lectura y reviso los últimos 90 días de órdenes y liquidaciones.</p>
+      </li>
+      <li style="background:#FAF8F4; padding:24px 22px 26px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; border-bottom:1px solid #D9D4C9; padding-bottom:12px">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:clamp(30px,4vw,44px); font-weight:500; line-height:1; letter-spacing:-0.04em">02</span>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#B04520; text-align:right">48 horas después</span>
+        </div>
+        <h3 style="font-size:22px; font-weight:600; margin-top:14px">Propuesta</h3>
+        <p style="margin-top:8px; font-size:15.5px; color:#3A382F">Te muestro cuánta plata hay sobre la mesa, qué es reclamable y con qué plan conviene arrancar.</p>
+      </li>
+      <li style="background:#FAF8F4; padding:24px 22px 26px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; border-bottom:1px solid #D9D4C9; padding-bottom:12px">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:clamp(30px,4vw,44px); font-weight:500; line-height:1; letter-spacing:-0.04em">03</span>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#B04520; text-align:right">2 semanas</span>
+        </div>
+        <h3 style="font-size:22px; font-weight:600; margin-top:14px">Implementación</h3>
+        <p style="margin-top:8px; font-size:15.5px; color:#3A382F">Dejo corriendo la detección, los reclamos automáticos y el reporte armado en tu formato.</p>
+      </li>
+      <li style="background:#FAF8F4; padding:24px 22px 26px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; border-bottom:1px solid #D9D4C9; padding-bottom:12px">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:clamp(30px,4vw,44px); font-weight:500; line-height:1; letter-spacing:-0.04em">04</span>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#B04520; text-align:right">Mes a mes</span>
+        </div>
+        <h3 style="font-size:22px; font-weight:600; margin-top:14px">Operación</h3>
+        <p style="margin-top:8px; font-size:15.5px; color:#3A382F">Reclamos presentados sin intervención, reporte los lunes y una revisión mensual con acciones.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="casos" style="border-bottom:1px solid #0A0A0A; background:#F2EEE5">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0">
+    <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:baseline; justify-content:space-between">
+      <div>
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">04 / Casos</p>
+        <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:16ch">Qué pasa cuando el sistema entra</h2>
+      </div>
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:#B05A2E; border:1px dashed #C99A72; padding:10px 14px; max-width:34ch">Los números de esta sección son valores de ejemplo. Reemplazalos con datos reales antes de publicar.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1px; background:#0A0A0A; border:1px solid #0A0A0A; margin-top:clamp(28px,4vw,44px)">
+      <article style="background:#FAF8F4; padding:26px 24px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#1B5E63">Cadena · 10 sucursales</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(36px,4.6vw,52px); line-height:1; letter-spacing:-0.04em; margin-top:16px; color:#D4552A; border-bottom:2px dotted #D4552A; display:inline-block" data-editable="">USD 10.000</p>
+        <p style="margin-top:12px; color:#3A382F; font-size:15.5px">recuperados en <span style="border-bottom:2px dotted #B0AA9E" data-editable="">6 meses</span> de operación sobre pedidos cancelados y faltantes.</p>
+      </article>
+      <article style="background:#FAF8F4; padding:26px 24px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#1B5E63">Grupo multi-marca · 3 marcas</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(36px,4.6vw,52px); line-height:1; letter-spacing:-0.04em; margin-top:16px; color:#D4552A; border-bottom:2px dotted #D4552A; display:inline-block" data-editable="">20 h</p>
+        <p style="margin-top:12px; color:#3A382F; font-size:15.5px">por mes que dejaron de armar reportes a mano en <span style="border-bottom:2px dotted #B0AA9E" data-editable="">4 plataformas</span>.</p>
+      </article>
+      <article style="background:#FAF8F4; padding:26px 24px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#1B5E63">Marca única · 5 sucursales</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(36px,4.6vw,52px); line-height:1; letter-spacing:-0.04em; margin-top:16px; color:#D4552A; border-bottom:2px dotted #D4552A; display:inline-block" data-editable="">100 %</p>
+        <p style="margin-top:12px; color:#3A382F; font-size:15.5px">de los reclamos presentados dentro de la ventana, contra <span style="border-bottom:2px dotted #B0AA9E" data-editable="">30 %</span> antes de arrancar.</p>
+      </article>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:16px">
+      <figure style="margin:0; border:1px dashed #B0AA9E; background:#FAF8F4; padding:26px 24px; display:flex; flex-direction:column; gap:14px; min-height:200px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Slot · testimonio de cliente</p>
+        <p style="color:#6E6A62; font-size:15.5px; margin-top:auto">Acá va la cita textual de un cliente, con nombre, cargo y marca. Queda vacío a propósito: no invento testimonios.</p>
+      </figure>
+      <figure style="margin:0; border:1px dashed #B0AA9E; background:#FAF8F4; padding:26px 24px; display:flex; flex-direction:column; gap:14px; min-height:200px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Slot · video o GIF del sistema</p>
+        <p style="color:#6E6A62; font-size:15.5px; margin-top:auto">Acá va una captura en movimiento del sistema detectando y presentando reclamos. Pasame el archivo y lo monto.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="calculadora" style="border-bottom:1px solid #0A0A0A">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">05 / Calculadora</p>
+    <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:18ch">Cuánta plata tenés sobre la mesa</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1px; background:#0A0A0A; border:1px solid #0A0A0A; margin-top:clamp(28px,4vw,44px)">
+      <div style="background:#FAF8F4; padding:clamp(24px,3.2vw,36px); display:grid; gap:26px; align-content:start">
+        <label style="display:block">
+          <span style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#6E6A62">Pedidos por mes<b style="font-size:20px; color:#0A0A0A; font-weight:500; letter-spacing:0; font-variant-numeric:tabular-nums">{{ pedidosFmt }}</b></span>
+          <input type="range" min="500" max="60000" step="500" value="{{ pedidos }}" onChange="{{ onPedidos }}" style="width:100%; margin-top:12px; height:26px" />
+        </label>
+        <label style="display:block">
+          <span style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#6E6A62">Pedidos con problema<b style="font-size:20px; color:#0A0A0A; font-weight:500; letter-spacing:0; font-variant-numeric:tabular-nums">{{ pctFmt }}</b></span>
+          <input type="range" min="0.5" max="12" step="0.5" value="{{ pct }}" onChange="{{ onPct }}" style="width:100%; margin-top:12px; height:26px" />
+        </label>
+        <label style="display:block">
+          <span style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:#6E6A62">Ticket promedio<b style="font-size:20px; color:#0A0A0A; font-weight:500; letter-spacing:0; font-variant-numeric:tabular-nums">{{ ticketFmt }}</b></span>
+          <input type="range" min="5" max="120" step="1" value="{{ ticket }}" onChange="{{ onTicket }}" style="width:100%; margin-top:12px; height:26px" />
+        </label>
+        <p style="font-size:14px; color:#6E6A62; border-top:1px solid #D9D4C9; padding-top:16px">Si no sabés el porcentaje, dejalo donde está: la auditoría te devuelve el número real de tu cuenta.</p>
+      </div>
+      <div style="background:#0A0A0A; color:#FAF8F4; padding:clamp(24px,3.2vw,36px); display:flex; flex-direction:column; gap:8px; justify-content:center">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#7E7970">Expuesto por mes</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(38px,6.4vw,64px); line-height:1; letter-spacing:-0.045em; color:#D4552A; font-variant-numeric:tabular-nums">{{ mensualFmt }}</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#7E7970; margin-top:22px">Expuesto por año</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(26px,3.6vw,38px); line-height:1; letter-spacing:-0.03em; font-variant-numeric:tabular-nums">{{ anualFmt }}</p>
+        <p style="font-size:14.5px; color:#9B958A; margin-top:24px; max-width:38ch">Es el monto en juego, no una promesa de recupero. Cuánto vuelve depende de la evidencia disponible y de la ventana de reclamo de cada plataforma.</p>
+        <a href="#contacto" style="margin-top:22px; background:#D4552A; color:#FAF8F4; padding:15px 22px; text-align:center; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:17px; border:1px solid #D4552A; min-height:48px; display:flex; align-items:center; justify-content:center" style-hover="background:#FAF8F4; color:#0A0A0A; border-color:#FAF8F4">Pedí la auditoría gratuita</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planes" style="border-bottom:1px solid #0A0A0A; background:#F2EEE5">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">06 / Modelo comercial</p>
+    <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:20ch">Fee mensual fijo más un porcentaje de lo que recupero</h2>
+    <p style="margin-top:16px; max-width:52ch; color:#3A382F; font-size:clamp(16px,1.8vw,18px)">El fee cubre la operación: reclamos, reportes y seguimiento. El porcentaje solo se cobra sobre plata que efectivamente volvió a tu cuenta.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1px; background:#0A0A0A; border:1px solid #0A0A0A; margin-top:clamp(28px,4vw,44px)">
+      <article style="background:#FAF8F4; padding:26px 22px; display:flex; flex-direction:column; gap:14px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#1B5E63">Base</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(32px,3.8vw,42px); line-height:1; letter-spacing:-0.04em">USD 300<span style="font-size:15px; color:#6E6A62; letter-spacing:0">/mes</span></p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:#B04520">+ {{ pctLabel }} de lo recuperado</p>
+        <p style="font-size:15.5px; color:#3A382F; border-top:1px solid #D9D4C9; padding-top:14px; margin-top:auto">Hasta 2 locaciones. Recupero de disputas y reporte mensual consolidado.</p>
+      </article>
+      <article style="background:#FAF8F4; padding:26px 22px; display:flex; flex-direction:column; gap:14px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#1B5E63">Medio</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(32px,3.8vw,42px); line-height:1; letter-spacing:-0.04em">USD 500<span style="font-size:15px; color:#6E6A62; letter-spacing:0">/mes</span></p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:#B04520">+ {{ pctLabel }} de lo recuperado</p>
+        <p style="font-size:15.5px; color:#3A382F; border-top:1px solid #D9D4C9; padding-top:14px; margin-top:auto">Más de 2 locaciones. Suma reporte semanal y alertas de seguimiento continuo.</p>
+      </article>
+      <article style="background:#0A0A0A; color:#FAF8F4; padding:26px 22px; display:flex; flex-direction:column; gap:14px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#D4552A">Alto</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(32px,3.8vw,42px); line-height:1; letter-spacing:-0.04em">USD 900<span style="font-size:15px; color:#9B958A; letter-spacing:0">/mes</span></p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:#B04520">+ {{ pctLabel }} de lo recuperado</p>
+        <p style="font-size:15.5px; color:#D8D4CA; border-top:1px solid #2A2A26; padding-top:14px; margin-top:auto">Más de 5 locaciones. Suma multi-marca, revisión mensual y optimización de fichas.</p>
+      </article>
+      <article style="background:#FAF8F4; padding:26px 22px; display:flex; flex-direction:column; gap:14px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#1B5E63">Gigante</p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:clamp(32px,3.8vw,42px); line-height:1; letter-spacing:-0.04em">USD 1.600<span style="font-size:15px; color:#6E6A62; letter-spacing:0">/mes</span></p>
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:#B04520">+ {{ pctLabel }} de lo recuperado</p>
+        <p style="font-size:15.5px; color:#3A382F; border-top:1px solid #D9D4C9; padding-top:14px; margin-top:auto">Más de 10 locaciones. Operación dedicada, onboarding de aperturas y análisis de promos.</p>
+      </article>
+    </div>
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.06em; color:#6E6A62; margin-top:16px">Precios en dólares, sin impuestos. El porcentaje sobre recupero se fija en la propuesta y no cambia durante el contrato.</p>
+  </div>
+</section>
+
+<section id="quien" style="border-bottom:1px solid #0A0A0A">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:clamp(28px,4vw,56px); align-items:start">
+    <div style="border:1px dashed #B0AA9E; aspect-ratio:4/5; display:flex; flex-direction:column; justify-content:flex-end; padding:22px; max-width:380px">
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Slot · foto de Nicolás</p>
+      <p style="color:#6E6A62; font-size:14.5px; margin-top:8px">Pasame la foto y la monto acá.</p>
+    </div>
+    <div>
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">07 / Quién está atrás</p>
+      <h2 style="font-size:clamp(30px,5.2vw,52px); font-weight:600; line-height:1.02; margin-top:14px">Nicolás López</h2>
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:12.5px; letter-spacing:0.06em; color:#1B5E63; margin-top:10px">Fundador y operador de Margen</p>
+      <p style="margin-top:20px; max-width:52ch; color:#3A382F; font-size:clamp(16px,1.8vw,18px)">Llevo seis años en el rubro gastronómico, construyendo soluciones digitales para restaurantes. Vi de cerca cómo se pierde plata en las apps y cómo nadie tiene el tiempo de perseguirla, así que armé el sistema que la persigue solo.</p>
+      <p style="margin-top:16px; max-width:52ch; color:#3A382F; font-size:clamp(16px,1.8vw,18px)">Atiendo cada cuenta yo. No hay un equipo junior rotando ni un ejecutivo intermediando: hablás conmigo, y lo que no hace el software lo hago yo.</p>
+      <a href="#contacto" style="display:inline-flex; align-items:center; min-height:48px; margin-top:26px; border:1px solid #0A0A0A; padding:14px 24px; color:#0A0A0A; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:17px" style-hover="background:#0A0A0A; color:#FAF8F4">Hablemos de tu cuenta</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="border-bottom:1px solid #0A0A0A; background:#F2EEE5">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">08 / Preguntas</p>
+    <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:16ch">Lo que se pregunta todo el mundo</h2>
+    <div style="margin-top:clamp(28px,4vw,44px); border-top:1px solid #0A0A0A">
+      <details style="border-bottom:1px solid #0A0A0A">
+        <summary style="cursor:pointer; padding:20px 0; display:flex; gap:16px; align-items:baseline; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:clamp(19px,2.4vw,24px); list-style:none"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">01</span><span>¿Tenés acceso a mis cuentas? ¿Cómo lo asegurás?</span></summary>
+        <p style="padding:0 0 22px 34px; max-width:64ch; color:#3A382F">Sí, necesito acceso para operar. Trabajo con usuarios propios con el permiso mínimo necesario, nunca con tu clave personal, y quedan registrados a mi nombre para que puedas ver en el panel qué hizo cada uno. Firmamos un acuerdo de confidencialidad antes de conectar nada, y el día que cortemos revocás esos usuarios y se termina el acceso.</p>
+      </details>
+      <details style="border-bottom:1px solid #0A0A0A">
+        <summary style="cursor:pointer; padding:20px 0; display:flex; gap:16px; align-items:baseline; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:clamp(19px,2.4vw,24px); list-style:none"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">02</span><span>¿Qué pasa si la plataforma cambia su sistema?</span></summary>
+        <p style="padding:0 0 22px 34px; max-width:64ch; color:#3A382F">Pasa seguido, y es parte del trabajo. Mantener las automatizaciones al día cuando una app cambia su panel, su formato de liquidación o su proceso de reclamo está incluido en el fee: no es un extra ni una excusa para frenar la operación. Mientras se ajusta, los reclamos se presentan a mano para no perder ninguna ventana.</p>
+      </details>
+      <details style="border-bottom:1px solid #0A0A0A">
+        <summary style="cursor:pointer; padding:20px 0; display:flex; gap:16px; align-items:baseline; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:clamp(19px,2.4vw,24px); list-style:none"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">03</span><span>¿Cobrás igual si no recuperás nada?</span></summary>
+        <p style="padding:0 0 22px 34px; max-width:64ch; color:#3A382F">El fee mensual se cobra igual, porque cubre la operación completa: reportes, alertas y seguimiento, que corren aunque un mes no haya nada que reclamar. El porcentaje, en cambio, solo se cobra sobre plata que efectivamente volvió a tu cuenta. Si no se recupera nada, no hay porcentaje.</p>
+      </details>
+      <details style="border-bottom:1px solid #0A0A0A">
+        <summary style="cursor:pointer; padding:20px 0; display:flex; gap:16px; align-items:baseline; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:clamp(19px,2.4vw,24px); list-style:none"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">04</span><span>¿Me quedo atado a un contrato largo?</span></summary>
+        <p style="padding:0 0 22px 34px; max-width:64ch; color:#3A382F">No. El acuerdo es mes a mes, con treinta días de aviso para cortar. Lo único que pido es que el primer ciclo sea completo, porque los reclamos presentados tardan en resolverse y recién ahí se ve el resultado. Los datos consolidados que se generaron son tuyos y te los llevás exportados.</p>
+      </details>
+      <details style="border-bottom:1px solid #0A0A0A">
+        <summary style="cursor:pointer; padding:20px 0; display:flex; gap:16px; align-items:baseline; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:clamp(19px,2.4vw,24px); list-style:none"><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#B04520; flex:none">05</span><span>¿Cuánto tarda en arrancar?</span></summary>
+        <p style="padding:0 0 22px 34px; max-width:64ch; color:#3A382F">La auditoría lleva cinco días hábiles desde que tengo los accesos y la propuesta llega cuarenta y ocho horas después. Si avanzamos, la implementación toma dos semanas y la operación arranca el primer día del mes siguiente. En total, entre tres y cuatro semanas desde la primera llamada hasta el primer reclamo presentado por el sistema.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(48px,7vw,92px) 0">
+    <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#6E6A62">09 / Contacto</p>
+    <h2 style="font-size:clamp(30px,5.2vw,56px); font-weight:600; line-height:1.02; margin-top:14px; max-width:18ch">Auditoría gratuita de tu cuenta</h2>
+    <p style="margin-top:16px; max-width:52ch; color:#3A382F; font-size:clamp(16px,1.8vw,18px)">Contame en qué plataformas operás y con cuántas sucursales. Reviso los últimos 90 días y te digo cuánta plata hay para reclamar, sin compromiso.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1px; background:#0A0A0A; border:1px solid #0A0A0A; margin-top:clamp(28px,4vw,44px)">
+      <form onSubmit="{{ onSubmit }}" style="background:#FAF8F4; padding:clamp(24px,3.2vw,36px); display:grid; gap:18px; align-content:start">
+        <label style="display:grid; gap:7px">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Marca o grupo *</span>
+          <input type="text" name="marca" required="{{ true }}" autoComplete="organization" style="border:1px solid #0A0A0A; background:transparent; padding:13px 14px; min-height:48px; font-size:16px" />
+        </label>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:18px">
+          <label style="display:grid; gap:7px">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Sucursales *</span>
+            <select name="sucursales" required="{{ true }}" style="border:1px solid #0A0A0A; background:transparent; padding:13px 14px; min-height:48px; font-size:16px">
+              <option value="1-2">1 a 2</option>
+              <option value="3-5">3 a 5</option>
+              <option value="6-10">6 a 10</option>
+              <option value="11-30">11 a 30</option>
+              <option value="30+">Más de 30</option>
+            </select>
+          </label>
+          <label style="display:grid; gap:7px">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Pedidos por mes *</span>
+            <select name="pedidos" required="{{ true }}" style="border:1px solid #0A0A0A; background:transparent; padding:13px 14px; min-height:48px; font-size:16px">
+              <option value="&lt;1000">Menos de 1.000</option>
+              <option value="1000-5000">1.000 a 5.000</option>
+              <option value="5000-20000">5.000 a 20.000</option>
+              <option value="20000+">Más de 20.000</option>
+            </select>
+          </label>
+        </div>
+        <fieldset style="border:1px solid #D9D4C9; padding:16px 16px 18px; margin:0; display:grid; gap:11px">
+          <legend style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62; padding:0 6px">Plataformas donde operás *</legend>
+          <label style="display:flex; gap:11px; align-items:center; font-size:16px; min-height:32px; cursor:pointer"><input type="checkbox" name="plataformas" value="Uber Eats" style="width:19px; height:19px" /><span>Uber Eats</span></label>
+          <label style="display:flex; gap:11px; align-items:center; font-size:16px; min-height:32px; cursor:pointer"><input type="checkbox" name="plataformas" value="Rappi" style="width:19px; height:19px" /><span>Rappi</span></label>
+          <label style="display:flex; gap:11px; align-items:center; font-size:16px; min-height:32px; cursor:pointer"><input type="checkbox" name="plataformas" value="PedidosYa" style="width:19px; height:19px" /><span>PedidosYa</span></label>
+          <label style="display:flex; gap:11px; align-items:center; font-size:16px; min-height:32px; cursor:pointer"><input type="checkbox" name="plataformas" value="DoorDash" style="width:19px; height:19px" /><span>DoorDash</span></label>
+        </fieldset>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:18px">
+          <label style="display:grid; gap:7px">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Tu nombre *</span>
+            <input type="text" name="nombre" required="{{ true }}" autoComplete="name" style="border:1px solid #0A0A0A; background:transparent; padding:13px 14px; min-height:48px; font-size:16px" />
+          </label>
+          <label style="display:grid; gap:7px">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Email *</span>
+            <input type="email" name="email" required="{{ true }}" autoComplete="email" style="border:1px solid #0A0A0A; background:transparent; padding:13px 14px; min-height:48px; font-size:16px" />
+          </label>
+        </div>
+        <label style="display:flex; gap:11px; align-items:flex-start; font-size:14.5px; color:#3A382F; cursor:pointer">
+          <input type="checkbox" name="consentimiento" required="{{ true }}" style="width:19px; height:19px; margin-top:2px; flex:none" />
+          <span>Acepto que Margen use estos datos para contactarme sobre la auditoría, según la <a href="Privacidad.dc.html" style="border-bottom:1px solid #B04520">política de privacidad</a>.</span>
+        </label>
+        <button type="submit" style="background:#D4552A; color:#FAF8F4; border:1px solid #D4552A; padding:16px 24px; min-height:52px; font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:600; font-size:18px; cursor:pointer" style-hover="background:#0A0A0A; border-color:#0A0A0A">Pedir la auditoría</button>
+        <p style="font-size:13.5px; color:#6E6A62" role="status">{{ formMsg }}</p>
+      </form>
+      <div style="background:#F2EEE5; padding:clamp(24px,3.2vw,36px); display:flex; flex-direction:column; gap:16px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">O agendá directo</p>
+        <sc-if value="{{ tieneCalendario }}" hint-placeholder-val="{{ false }}">
+          <iframe src="{{ calendarUrl }}" title="Calendario de Margen" loading="lazy" style="width:100%; min-height:560px; border:1px solid #0A0A0A; background:#FAF8F4"></iframe>
+        </sc-if>
+        <sc-if value="{{ sinCalendario }}" hint-placeholder-val="{{ true }}">
+          <div style="border:1px dashed #B0AA9E; padding:24px 22px; display:flex; flex-direction:column; gap:12px; flex:1; justify-content:center; min-height:280px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Slot · calendario embebido</p>
+            <p style="color:#6E6A62; font-size:15.5px; max-width:38ch">Acá va el calendario real de Cal.com o Calendly. Hasta que exista la URL, no hay ningún botón que diga «agendar» y lleve a la nada: el formulario de la izquierda es el único camino activo.</p>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer style="border-top:1px solid #0A0A0A; background:#0A0A0A; color:#FAF8F4">
+  <div style="width:min(1180px,100% - 32px); margin-inline:auto; padding:clamp(34px,4.5vw,52px) 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:26px">
+    <div>
+      <div style="display:flex; align-items:baseline; gap:8px">
+        <span style="font-family:'IBM Plex Sans Condensed',sans-serif; font-weight:700; font-size:26px; letter-spacing:-0.02em">Margen</span>
+        <span style="width:7px; height:7px; background:#D4552A; display:block"></span>
+      </div>
+      <p style="margin-top:10px; color:#9B958A; font-size:15px; max-width:34ch">Growth partner operativo para marcas gastronómicas que venden en apps de delivery.</p>
+    </div>
+    <nav aria-label="Pie de página" style="display:grid; gap:9px; font-family:'IBM Plex Mono',monospace; font-size:12.5px; letter-spacing:0.06em; align-content:start">
+      <a href="#disputas" style="color:#9B958A" style-hover="color:#FAF8F4">Recupero de disputas</a>
+      <a href="#reportes" style="color:#9B958A" style-hover="color:#FAF8F4">Reportes automáticos</a>
+      <a href="#planes" style="color:#9B958A" style-hover="color:#FAF8F4">Planes</a>
+      <a href="Privacidad.dc.html" style="color:#9B958A" style-hover="color:#FAF8F4">Política de privacidad</a>
+    </nav>
+    <div style="display:grid; gap:9px; align-content:start">
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#7E7970">Idioma</p>
+      <p style="display:flex; gap:8px; font-family:'IBM Plex Mono',monospace; font-size:12.5px"><span style="color:#FAF8F4">Español</span><span style="color:#8A857A">/</span><a href="Margen-EN.dc.html" hrefLang="en" style="color:#9B958A" style-hover="color:#FAF8F4">English</a></p>
+    </div>
+  </div>
+  <div style="border-top:1px solid #2A2A26">
+    <p style="width:min(1180px,100% - 32px); margin-inline:auto; padding:16px 0; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:#7E7970">© 2026 Margen</p>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;calendarUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conexiones&quot;},&quot;contactEmail&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conexiones&quot;},&quot;pctSobreRecupero&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:20,&quot;min&quot;:5,&quot;max&quot;:40,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Modelo comercial&quot;}}">
+class Component extends DCLogic {
+  state = { pedidos: 6000, pct: 3, ticket: 22, formMsg: '' };
+  rootRef = React.createRef();
+
+  componentDidMount() { this.armCounters(); }
+
+  armCounters() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    const nodes = Array.from(root.querySelectorAll('[data-counter]'));
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    nodes.forEach(n => {
+      const raw = n.textContent.trim();
+      const m = raw.match(/[\d.,]+/);
+      if (!m) return;
+      const target = parseFloat(m[0].replace(/\./g, '').replace(',', '.'));
+      const decimals = (m[0].split(',')[1] || '').length;
+      const prefix = raw.slice(0, m.index);
+      const suffix = raw.slice(m.index + m[0].length);
+      const fmt = v => prefix + v.toLocaleString('es-AR', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) + suffix;
+      n.textContent = fmt(0);
+      const run = () => {
+        const t0 = performance.now(), dur = 1100;
+        const step = now => {
+          const p = Math.min(1, (now - t0) / dur);
+          const e = 1 - Math.pow(1 - p, 3);
+          n.textContent = p < 1 ? fmt(target * e) : raw;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      };
+      if (!('IntersectionObserver' in window)) { n.textContent = raw; return; }
+      const io = new IntersectionObserver(es => {
+        es.forEach(e => { if (e.isIntersecting) { io.disconnect(); run(); } });
+      }, { threshold: 0.4 });
+      io.observe(n);
+    });
+  }
+
+  money(v) {
+    return 'USD ' + Math.round(v).toLocaleString('es-AR');
+  }
+
+  renderVals() {
+    const { pedidos, pct, ticket } = this.state;
+    const mensual = pedidos * (pct / 100) * ticket;
+    const pctProp = this.props.pctSobreRecupero ?? 20;
+    return {
+      rootRef: this.rootRef,
+      pedidos, pct, ticket,
+      pedidosFmt: pedidos.toLocaleString('es-AR'),
+      pctFmt: pct.toLocaleString('es-AR', { minimumFractionDigits: pct % 1 ? 1 : 0 }) + ' %',
+      ticketFmt: 'USD ' + ticket,
+      mensualFmt: this.money(mensual),
+      anualFmt: this.money(mensual * 12),
+      pctLabel: pctProp + ' %',
+      calendarUrl: this.props.calendarUrl || '',
+      tieneCalendario: !!this.props.calendarUrl,
+      sinCalendario: !this.props.calendarUrl,
+      formMsg: this.state.formMsg,
+      onPedidos: e => this.setState({ pedidos: +e.target.value }),
+      onPct: e => this.setState({ pct: +e.target.value }),
+      onTicket: e => this.setState({ ticket: +e.target.value }),
+      onSubmit: e => {
+        e.preventDefault();
+        const f = e.target;
+        const plats = Array.from(f.querySelectorAll('input[name="plataformas"]:checked')).map(i => i.value);
+        const faltan = ['marca', 'sucursales', 'pedidos', 'nombre', 'email'].filter(k => !String(f[k] && f[k].value || '').trim());
+        if (faltan.length) { this.setState({ formMsg: 'Completá todos los campos obligatorios antes de enviar.' }); return; }
+        if (!f.consentimiento.checked) { this.setState({ formMsg: 'Necesito tu consentimiento para poder contactarte.' }); return; }
+        if (!plats.length) { this.setState({ formMsg: 'Elegí al menos una plataforma donde operás.' }); return; }
+        const to = this.props.contactEmail || '';
+        if (to) {
+          const body = ['Marca: ' + f.marca.value, 'Sucursales: ' + f.sucursales.value, 'Pedidos por mes: ' + f.pedidos.value, 'Plataformas: ' + plats.join(', '), 'Nombre: ' + f.nombre.value, 'Email: ' + f.email.value].join('\n');
+          window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent('Auditoría gratuita — ' + f.marca.value) + '&body=' + encodeURIComponent(body);
+          this.setState({ formMsg: 'Se abrió tu cliente de correo con los datos cargados. Respondo dentro de las 24 horas hábiles.' });
+        } else {
+          this.setState({ formMsg: 'Formulario listo, falta conectarlo a un destino. Cargá el mail de contacto o el endpoint en los ajustes de la página.' });
+        }
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
