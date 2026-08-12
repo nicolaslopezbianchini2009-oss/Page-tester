@@ -255,13 +255,17 @@
       </article>
     </div>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:16px">
-      <figure style="margin:0; border:1px dashed #B0AA9E; background:#FAF8F4; padding:26px 24px; display:flex; flex-direction:column; gap:14px; min-height:200px">
-        <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Slot · testimonio de cliente</p>
-        <p style="color:#6E6A62; font-size:15.5px; margin-top:auto">Acá va la cita textual de un cliente, con nombre, cargo y marca. Queda vacío a propósito: no invento testimonios.</p>
+      <!-- TESTIMONIO INVENTADO — solo para maquetar. Reemplazar por uno real o borrar la figure entera. -->
+      <figure style="margin:0; border:1px solid #0A0A0A; background:#FAF8F4; padding:26px 24px; display:flex; flex-direction:column; gap:14px; min-height:200px">
+        <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#B04520">Ejemplo · reemplazar por uno real</p>
+        <blockquote style="margin:0; color:#1A1A1A; font-size:17px; line-height:1.5">«Perdíamos plata todos los meses en pedidos mal cobrados y nadie tenía tiempo de reclamarlos. Ahora se presentan solos y me entero cuando ya está resuelto.»</blockquote>
+        <figcaption style="margin-top:auto; color:#6E6A62; font-size:14px"><strong style="color:#0A0A0A; font-weight:600">Martín Sosa</strong> · Dueño, 4 locales</figcaption>
       </figure>
-      <figure style="margin:0; border:1px dashed #B0AA9E; background:#FAF8F4; padding:26px 24px; display:flex; flex-direction:column; gap:14px; min-height:200px">
-        <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6E6A62">Slot · video o GIF del sistema</p>
-        <p style="color:#6E6A62; font-size:15.5px; margin-top:auto">Acá va una captura en movimiento del sistema detectando y presentando reclamos. Pasame el archivo y lo monto.</p>
+      <figure style="margin:0; border:1px solid #0A0A0A; background:#0A0A0A; padding:0; overflow:hidden; display:flex; flex-direction:column; min-height:200px">
+        <video src="sistema.mp4" poster="sistema-poster.jpg" autoplay muted loop playsinline
+               aria-label="El sistema detectando y presentando reclamos automáticamente"
+               style="width:100%; flex:1; min-height:0; object-fit:contain; display:block; background:#0A0A0A"></video>
+        <figcaption style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#FAF8F4; padding:13px 16px">El sistema, funcionando</figcaption>
       </figure>
     </div>
   </div>
@@ -564,6 +568,28 @@ class Component extends DCLogic {
     };
   }
 }
+</script>
+<script>
+/* support.js reescribe el DOM y descarta los atributos `muted` y `loop` del <video>
+   (conserva `autoplay` y `playsinline`). Sin `muted` el navegador bloquea el autoplay;
+   sin `loop` el video corta a los 30 s. Los reponemos como propiedades y reaplicamos
+   si el runtime vuelve a redibujar el elemento. */
+(function () {
+  function fijarVideos() {
+    document.querySelectorAll('video[autoplay]').forEach(function (v) {
+      if (v.__ajustado) return;   // evita reentrar: setear `loop` muta el DOM
+      v.__ajustado = true;
+      v.muted = true;
+      v.loop = true;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});   // autoplay bloqueado: queda el poster
+    });
+  }
+  fijarVideos();
+  document.addEventListener('DOMContentLoaded', fijarVideos);
+  window.addEventListener('load', fijarVideos);
+  new MutationObserver(fijarVideos).observe(document.documentElement, { childList: true, subtree: true });
+})();
 </script>
 </body>
 </html>
