@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/Margen.dc.html" }
+  ],
+  "redirects": [
+    { "source": "/test-pagina/:archivo*", "destination": "/:archivo*", "permanent": false }
+  ]
+}
